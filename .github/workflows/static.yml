@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المفاجأة الغامضة</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow-x: hidden;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 40px;
+      animation: rainbow 2s infinite linear;
+    }
+    @keyframes rainbow {
+      0% { color: red;}
+      20% { color: orange;}
+      40% { color: yellow;}
+      60% { color: green;}
+      80% { color: blue;}
+      100% { color: purple;}
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .images img {
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      border-radius: 50%;
+      animation: spin 2s infinite linear;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+    .message {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 40px;
+      animation: shake 1s infinite;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0);}
+      25% { transform: translateX(-10px);}
+      50% { transform: translateX(10px);}
+      75% { transform: translateX(-10px);}
+      100% { transform: translateX(0);}
+    }
+    audio {
+      display: block;
+      margin: 30px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 مفاجأة غامضة 🎉</h1>
+  <div class="images">
+    <img src="https://i.imgur.com/4M34hi2.png" alt="Funny Cat">
+    <img src="https://i.imgur.com/2F2bQb6.png" alt="Funny Dog">
+    <img src="https://i.imgur.com/oWQJXbq.png" alt="Funny Meme">
+    <img src="https://i.imgur.com/3HJgVQX.png" alt="Surprised Cat">
+    <img src="https://i.imgur.com/u3MZyQ3.png" alt="Crazy Face">
+    <img src="https://i.imgur.com/lKJiT77.png" alt="Laugh">
+    <img src="https://i.imgur.com/6NRhT7i.png" alt="Monkey">
+    <img src="https://i.imgur.com/9R2D7hB.png" alt="Surprise">
+  </div>
+  <div class="message">
+    دخلتي للمنطقة الغامضة... استعد للضحك والبطء 😂<br>
+    واش نتا قوي؟ حاول تغلق الصفحة بسرعة!
+  </div>
+  <audio controls autoplay loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+</body>
+</html>
